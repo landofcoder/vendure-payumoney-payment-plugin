@@ -1,5 +1,7 @@
 # Payumoney plugin
 
+This plugin enables payments to be processed by [PayUMoney](https://www.payu.in/), a popular payment provider.
+
 The PayUMoney Node library provides convenient access to the PayUMoney API from applications written in server-side JavaScript.
 
 ## Documentation
