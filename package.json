@@ -1,0 +1,40 @@
+{
+  "name": "@landofcoder/vendure-payumoney-payment-plugin",
+  "version": "0.0.1",
+  "description": "A payumoney payment plugin for Vendure Ecommerce Platform",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:coverage-ci": "jest --coverage && coveralls < coverage/lcov.info",
+    "build": "rimraf dist && tsc -p ./tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/landofcoder/vendure-payumoney-payment-plugin.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/landofcoder/vendure-payumoney-payment-plugin/issues"
+  },
+  "homepage": "https://github.com/landofcoder/vendure-payumoney-payment-plugin#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.0",
+    "@types/ms": "^0.7.31",
+    "@types/node": "^14.0.13",
+    "coveralls": "^3.1.0",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0",
+    "typescript": "3.8.3"
+  },
+  "dependencies": {
+    "@vendure/core": "^0.14.0",
+    "payumoney-node": "^2.0.1"
+  }
+}
